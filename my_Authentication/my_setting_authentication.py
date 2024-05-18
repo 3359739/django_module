@@ -41,7 +41,7 @@ class my_login_authentication(BaseAuthentication):
             token=uuid.uuid4()
             substance.token=token
             substance.save()
-            return substance.username,token
+            return substance,token
 
         else:
            return

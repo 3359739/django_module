@@ -19,5 +19,6 @@ from django.urls.conf import include
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('',include('my_Authentication.urls')),
-    path('',include('my_Permission.urls'))
+    path('',include('my_Permission.urls')),
+    path('',include('my_throttle.urls'))
 ]
